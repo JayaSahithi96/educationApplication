@@ -1,30 +1,25 @@
 package com.example.demo.user;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.Data;
+
 
 import javax.persistence.GeneratedValue;
 
-@NoArgsConstructor
-@AllArgsConstructor
-@ToString
+@Data
 public class user {
 	@GeneratedValue
-	@Getter @Setter private Long Id;
+	 private Long Id;
 
-	@Getter @Setter private String userName;
+	 private String userName;
 
 
-	@Getter @Setter private String userType;
+	 private String userType;
 
-	@Getter @Setter private String firstName;
+	 private String firstName;
 
-	@Getter @Setter private String lastName;
+	 private String lastName;
 
-	@Getter @Setter private String emailId;
+	 private String emailId;
 
-	@Getter @Setter private String telephone;
+	 private String telephone;
 
 }
