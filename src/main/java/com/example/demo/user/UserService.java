@@ -12,7 +12,7 @@ public class UserService {
 	@Autowired
 	UserRepository userRepository;
 	public List<User> getUser() {
-		List<User> users= UserRepository.getUsers();
+		List<User> users= userRepository.getUsers();
 		return users;
 		
 		
