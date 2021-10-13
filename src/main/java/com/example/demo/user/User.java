@@ -1,14 +1,16 @@
 package com.example.demo.user;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-@Entity
+
 @Data
+@AllArgsConstructor
 public class User {
-	@Id
-	@GeneratedValue
+	
+	
 	 private int Id;
 
 	 private String userName;
