@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class UserRepository{
     
-  public List<User> getUsers(){
+  public static List<User> getUsers(){
     
     ArrayList<User> users = new ArrayList<User>();
     
