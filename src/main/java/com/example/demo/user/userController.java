@@ -10,15 +10,15 @@ import org.springframework.web.bind.annotation.RestController;
 import lombok.RequiredArgsConstructor;
 
 @RestController
-@RequiredArgsConstructor
 public class userController {
-	private final userRepository studentRepository = null;
+        @Autowire
+	private final UserService userService;
 	
 
 	
 	@GetMapping("/students")
 	public List<user> getUsers() {
-	    return studentRepository.findAll();
+	    return userService.getUsers();
 	}
 	
 
