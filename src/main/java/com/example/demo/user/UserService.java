@@ -11,12 +11,12 @@ public class UserService {
 
 	@Autowired
 	UserRepository userRepository;
-	public List<User> getUser() {
-		List<User> users= userRepository.getUsers();
-		return users;
-		
-		
-	}
+	
+		public List<User> getUser() {
+	        return userRepository.findAll();
+	    }
+	
+	
 	
 	
 }

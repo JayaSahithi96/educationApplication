@@ -6,11 +6,14 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
 @Data
 @AllArgsConstructor
+@Document
 public class User {
 	
-	
+	 @Id
 	 private int Id;
 
 	 private String userName;
