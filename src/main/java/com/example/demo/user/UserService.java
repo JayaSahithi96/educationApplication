@@ -16,7 +16,14 @@ public class UserService {
 	        return userRepository.findAll();
 	    }
 	
-	
-	
+		public void deleteUser(Integer userId) {
+			User user = userRepository.findById(userId).get();
+			userRepository.delete(user);
+		}
+		public User getUserById(Integer userId) {
+			User user = userRepository.findById(userId).get();
+			return user;
+			
+		}
 	
 }
