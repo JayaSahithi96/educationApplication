@@ -1,8 +1,6 @@
 package com.example.demo.user;
 
 import java.util.List;
-import java.util.Optional;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,14 +14,13 @@ public class UserService {
 		public List<User> getUser() {
 	        return userRepository.findAll();
 	    }
-		public User findUserById(int id) {
+		public User findUserById(String id) {
 		    User user = userRepository.findById(id).get();
 			return user;
 		}
 		
-	
-		public void deleteUser(int userId) {
-			userRepository.deleteById(userId);
+		public void deleteUserById(String id) {
+		    userRepository.deleteById(id);
 		}
 
 	

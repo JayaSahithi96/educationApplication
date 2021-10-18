@@ -13,9 +13,9 @@ public class AccessingMongodb {
 	 @Bean
 	    CommandLineRunner commandLineRunner(UserRepository userRepository) {
 	        return strings -> {
-	            userRepository.save(new User(1,"Sahithi", "Student", "Jaya", "Aravapalli", "jsahithi@gmail.com", "916507"));
-	            userRepository.save(new User(2, "Srinivas", "Instructor", "Srini", "Nandigam", "raonandigam@gmail.com", "510"));
-	            userRepository.save(new User(3, "Usha", "Student", "Usha Rani", "Aravapalli", "Usha@gmail.com", "8885677733"));
+	            userRepository.save(new User("1","Sahithi", "Student", "Jaya", "Aravapalli", "jsahithi@gmail.com", "916507"));
+	            userRepository.save(new User("2", "Srinivas", "Instructor", "Srini", "Nandigam", "raonandigam@gmail.com", "510"));
+	            userRepository.save(new User("3", "Usha", "Student", "Usha Rani", "Aravapalli", "Usha@gmail.com", "8885677733"));
 	        };
 	    }
 	
