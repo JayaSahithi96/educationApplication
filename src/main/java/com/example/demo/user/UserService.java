@@ -17,11 +17,11 @@ public class UserService {
 	    }
 	
 		public void deleteUser(Integer userId) {
-			User user = userRepository.findById(userId).get();
+			User user = userRepository.findById(userId);
 			userRepository.delete(user);
 		}
 		public User getUserById(Integer userId) {
-			User user = userRepository.findById(userId).get();
+			User user = userRepository.findById(userId);
 			return user;
 			
 		}
