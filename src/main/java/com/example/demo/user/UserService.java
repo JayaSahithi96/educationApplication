@@ -16,11 +16,13 @@ public class UserService {
 		public List<User> getUser() {
 	        return userRepository.findAll();
 	    }
-		public Optional<User> findUserById(Integer id) {
-		    return userRepository.findById(id);
+		public User findUserById(int id) {
+		    User user = userRepository.findById(id).get();
+			return user;
 		}
+		
 	
-		public void deleteUser(Integer userId) {
+		public void deleteUser(int userId) {
 			userRepository.deleteById(userId);
 		}
 
