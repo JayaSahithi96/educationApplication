@@ -34,11 +34,11 @@ public class UserController {
         }
     	
     }
-	@DeleteMapping("/delete/{id}")
+	@DeleteMapping("/user/{id}")
 	public ResponseEntity deleteToDo(
 	        @PathVariable("id") String id) {
 	    userService.deleteUserById(id);
-	    return new ResponseEntity(HttpStatus.NO_CONTENT);
+	    return new ResponseEntity(HttpStatus.OK);
 	}
 
 
