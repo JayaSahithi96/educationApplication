@@ -24,5 +24,14 @@ public class SubjectService {
 		subjectRepository.save(subject);
 		return subject;
 	}
+	
+	public Subject findSubjectById(String subjectId) {
+	    Subject subject = subjectRepository.findById(subjectId).get();
+		return subject;
+	}
+	public void deleteSubjectById(String subjectId) {
+	    subjectRepository.deleteById(subjectId);
+	}
+	
 
 }

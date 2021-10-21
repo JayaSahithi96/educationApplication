@@ -9,18 +9,16 @@ import lombok.Data;
 @AllArgsConstructor
 @Document
 public class Subject {
-	
 	@Id
-	private String id;
+	private String subjectId;
 
 	private String title;
 
-	private String description;
 
 	private String subjectTerm;
 
 	private String subjectType;
 
-	private String subjectId;
+	
 
 }
