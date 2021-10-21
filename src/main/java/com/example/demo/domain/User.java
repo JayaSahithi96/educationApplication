@@ -2,6 +2,7 @@ package com.example.demo.domain;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
+import javax.persistence.Entity;
 import javax.persistence.Id;
 
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -9,6 +10,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Data
 @AllArgsConstructor
 @Document
+@Entity
 public class User {
 	
 	 @Id

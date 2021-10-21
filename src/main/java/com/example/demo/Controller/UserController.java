@@ -22,8 +22,6 @@ public class UserController {
         @Autowired
 	 UserService userService;
 	
-
-	
 	@GetMapping("/students")
 	public List<User> getUsers() {
 	    return userService.getUser();
