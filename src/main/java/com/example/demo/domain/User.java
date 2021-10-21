@@ -1,7 +1,8 @@
 package com.example.demo.domain;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.experimental.SuperBuilder;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -10,8 +11,9 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 @Document
-@Builder
+@SuperBuilder
 @Entity
 public class User {
 	
